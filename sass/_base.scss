@@ -1,0 +1,20 @@
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+
+$font-size: 16px;
+$font-RedHatDisplay: 'RedHatDisply';
+
+@font-face {
+  font-family: 'RedHatDisply';
+  src: url('/font/RedHatDisplay-VariableFont_wght.ttf');
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}
