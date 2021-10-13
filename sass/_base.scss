@@ -6,12 +6,16 @@ $Desaturated-blue: hsl(224, 23%, 55%);
 $Dark-blue: hsl(223, 47%, 23%);
 $hover: hsl(245, 83%, 68%);
 
-$font-size: 16px;
+$text-size: 16px;
 $font-RedHatDisplay: 'RedHatDisply';
+
+$mb-1: 1rem;
+$mb-2: 2rem;
+
 
 @font-face {
   font-family: 'RedHatDisply';
-  src: url('/font/RedHatDisplay-VariableFont_wght.ttf');
+  src: url('/font/fonts/RedHatDisplay-Medium.ttf');
 }
 
 @mixin radius {
@@ -31,6 +35,10 @@ $font-RedHatDisplay: 'RedHatDisply';
 }
 
 body{
+  /* First method to centering card */
+  @include centering();
+
+  font-family: $font-RedHatDisplay;
   width: 100%;
   height: 100vh;
   background-color: $pale-blue;
@@ -38,12 +46,6 @@ body{
   background-repeat: no-repeat;
   background-size: contain;
 
-  /* First method to centering card */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-family: $font-RedHatDisplay;
 }
 
 .attribution {
